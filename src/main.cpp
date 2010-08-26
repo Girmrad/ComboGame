@@ -29,6 +29,54 @@ int main(){
 			sf::String Text("Hello", Font, 12);
 
 			App.Draw(Text);
+
+			sf::Image AirImage;
+			if (!AirImage.LoadFromFile("images/air.jpg"))
+				{
+    				// Error...
+				}
+
+			sf::Sprite AirSprite;
+			AirSprite.SetImage(AirImage);
+			AirSprite.SetX(200.f);
+			App.Draw(AirSprite);
+
+			sf::Image EarthImage;
+			if (!EarthImage.LoadFromFile("images/earth.jpg"))
+				{
+    				// Error...
+				}
+
+			sf::Sprite EarthSprite;
+			EarthSprite.SetImage(EarthImage);
+			EarthSprite.SetX(200.f);
+			EarthSprite.SetY(100.f);
+			App.Draw(EarthSprite);
+
+			sf::Image WaterImage;
+			if (!WaterImage.LoadFromFile("images/water.jpg"))
+				{
+    				// Error...
+				}
+
+			sf::Sprite WaterSprite;
+			WaterSprite.SetImage(WaterImage);
+			WaterSprite.SetX(200.f);
+			WaterSprite.SetY(200.f);
+			App.Draw(WaterSprite);
+
+			sf::Image FireImage;
+			if (!FireImage.LoadFromFile("images/fire.jpg"))
+				{
+    				// Error...
+				}
+
+			sf::Sprite FireSprite;
+			FireSprite.SetImage(FireImage);
+			FireSprite.SetX(200.f);
+			FireSprite.SetY(300.f);
+			App.Draw(FireSprite);
+
 	}
 }
 	return 0;
